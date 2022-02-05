@@ -92,3 +92,30 @@ void main(void)
  
  getch();
 }
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+void main(void) 
+{
+ int A = 5, y1 = 0;
+ int B = 1, y2 = 0;
+ float mesafeHesabi = 0 ;
+ clrscr();
+ printf("\n 1. Koordinat (A,Y): ");
+ scanf("%d %d",&A,&y1);
+ fflush(stdin);
+ 
+ printf("\n 2. Koordinat (B,Y): ");
+ scanf("%d %d",&B,&y2);
+ fflush(stdin);
+ 
+ mesafeHesabi = sqrt( pow( (y2-y1),2) + pow((B-A),2) ) ;
+ printf("\n Mesafe : %.2f",mesafeHesabi);
+ 
+ getch();
+}
