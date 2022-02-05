@@ -1,0 +1,29 @@
+#Ali ve Ayşe birbirlerine top atarak oyun oynuyorlarmış. Ali koordinat sisteminde x doğrusunun üstünde A noktasında, Ayşe ise koordinat sisteminde x doğrusunun üstünde B noktasındadır.
+#Ayşe "Ali topu at" demiş. Ali bunu duyunca topu atmış. Top tam Ayşe'nin olduğu konuma düştüyse Ali topu ne kadar uzağa atmıştır?
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    struct konumlar
+    {
+        int x,y;
+
+    };
+    struct konumlar n1,n2;
+    float uzaklik;
+    
+    printf("Ali'nin konum koordinatlarini giriniz.");
+    scanf("%d%d",&n1.x,&n2.y);
+    
+    printf("Ayse'nin konum koordinatlarini giriniz.");
+    scanf("%d%d",&n2.x,&n2.y);
+    
+    uzaklik=sqrt(pow((n1.x-n2.x),2)+pow((n1.y-n2.y),2));
+    
+    printf("Açiklama: iki nokta arasindaki mesafe %lf'dir.",uzaklik);
+    return 0;
+}
+printf("Açiklama: top mesafesi %lf'dir.",uzaklik);
+    return 0;
+}
